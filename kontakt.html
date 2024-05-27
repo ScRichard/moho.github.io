@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mobilný Hospic Matky Rózy | Kontakt</title>
+    <link rel="stylesheet/less" type="text/css" href="styles/styles/ease.less" />
+    <link rel="stylesheet/less" type="text/css" href="styles/styles/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <link rel="shortcut icon" href="styles/images/logo-inside.png" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <menu id="menu">
+        <div class="navbar flex center">
+            <div class="header">
+                <img src="styles/images/logo.png" alt="logo" width="50px">
+                <h1>Mobilný Hospic Matky Rózy</h1>
+    
+                <a id="responsive"><i class='bx bx-menu'></i></a>
+            </div>
+            <div class="body" id="buttons">
+                <a href="/" class="nav-item">Domov</a>
+                <a href="o-nas.html" class="nav-item">O nás</a>
+                <a href="nas-tim.html" class="nav-item">Náš tím</a>
+                <a href="kontakt.html" class="nav-item active">Kontakt</a>
+            </div>
+        </div>
+        <div class="sub-nav">
+            <span><b>Adresa:</b> Kollárova 1246/13A, 014 01 Bytča</span>
+            <span><i class='bx bx-envelope' ></i> info@mohomatkyrozy.sk</span>
+            <span><i class='bx bxs-phone-call'></i> +421 948 921 715</span>
+        </div>
+    </menu>
+        
+    <div class="cont pd-5rem bg-def center">
+        <div class="header-main">Kontakt</div>
+        <div class="path">Domov > Kontakt</div>
+    </div>
+    <div class="splitter"></div>
+    <div class="cont pd-lr-20per center pd-tb-1rem gap-1rem">
+        <h2 class="pd-tb-1rem">Otvaracie hodiny</h2>
+        <p class="cas-head">Pondelok, Streda, Piatok</p>
+        <span class="cas">8:30 - 12:30</span>
+        <p class="cas-head">Utorok, Štvrtok</p>
+        <span class="cas">12:00 - 16:00</span>
+    </div>
+    <div class="cont pd-lr-20per gap-2rem center pd-tb-1rem">
+
+        <div class="cont gap-2rem">
+            <div class="section color-green">
+                <i class='bx bxs-phone-call' ></i>
+                <div class="text">
+                    <p>Telefón</p>
+                    <span>+421 948 921 715</span>
+                </div>
+            
+            </div>
+            <div class="section color-green">
+                <i class='bx bx-envelope' ></i>
+                <div class="text">
+                    <p>Email</p>
+                    <span>info@mohomatkyrozy.sk</span>
+                </div>
+            </div>
+            <div class="section color-green">
+                <i class='bx bx-info-circle'></i>
+                <div class="text">
+                    <p>Adresa</p>
+                    <span>Kollárova 1246/13A, 014 01 Bytča</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="splitter"></div>
+    <div class="footer" id="footer">
+        
+        <div class="container center gap-2rem">
+            <h3>Spájame a pomáhame</h3>
+
+            <div class="prispiet">
+                <h1>Podajte nám pomocnú ruku</h1>
+                <p>2% darované srdcom alebo dobrovoľný príspevok na účet</p>
+                <span>SK69 7500 0000 0040 2749 7780</span>
+            </div>
+        </div>
+        <div class="container gap-2rem">
+            <h3>Kontakt</h3>
+
+            <div class="section">
+                <i class='bx bxs-phone-call' ></i>
+                <div class="text">
+                    <p>Telefón</p>
+                    <span>+421 948 921 715</span>
+                </div>
+            
+            </div>
+            <div class="section">
+                <i class='bx bx-envelope' ></i>
+                <div class="text">
+                    <p>Email</p>
+                    <span>info@mohomatkyrozy.sk</span>
+                </div>
+            </div>
+            <div class="section">
+                <i class='bx bx-info-circle'></i>
+                <div class="text">
+                    <p>Adresa</p>
+                    <span>Kollárova 1246/13A, 014 01 Bytča</span>
+                </div>
+            </div>
+        </div>
+        <div class="container center gap-1rem">
+            <h3>Socialne siete</h3>
+            <div class="section">
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+            </div>
+            <img src="styles/images/logo-inside.png" alt="logo" width="150px" style="margin-top: 2rem;">
+        </div>
+    </div>
+    <div class="footer">
+        <span>© 2024 Copyright Holubica - spájame a pomáhame, oz.</span>
+        <a href="zasady-ochrany-osobnych-udajov.html">Zásady ochrany osobných údajov</a>
+    </div>
+
+    <script>
+        let responsive = document.getElementById("responsive")
+        let buttons = document.getElementById("buttons")
+
+        responsive.onclick = function() {
+            if(buttons.classList.contains("open")){
+                buttons.classList.remove("open")
+            }else {
+                buttons.classList.add("open")
+            }
+        }
+    </script>
+
+    <script>
+        let menu = document.getElementById('menu');
+        let offset = menu.offsetHeight;
+        window.onscroll = function() {
+            if(window.scrollY <= 200) {
+                menu.classList.remove("sticky");
+            }
+            else{
+                menu.classList.add("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
